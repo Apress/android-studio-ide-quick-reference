@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="241dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="147dp"
+    android:text="TextView"
+    android:textSize="36sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    android:id="@+id/btnhello"
+    android:layout_width="146dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:onClick="onClick"
+    android:text="hello"
+    android:textSize="36sp"
+    app:layout_constraintEnd_toEndOf="@+id/textView"
+    app:layout_constraintHorizontal_bias="0.494"
+    app:layout_constraintStart_toStartOf="@+id/textView"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <Button
+    android:id="@+id/btnworld"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:onClick="onClick"
+    android:text="world"
+    android:textSize="36sp"
+    app:layout_constraintEnd_toEndOf="@+id/btnhello"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/btnhello"
+    app:layout_constraintTop_toBottomOf="@+id/btnhello" />
+</android.support.constraint.ConstraintLayout>
